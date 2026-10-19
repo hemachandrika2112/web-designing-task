@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wander Vista</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-attachment: fixed;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: relative;
+            top: 0;
+            width: 1000px;
+            height: 30px;
+            padding: 5px;
+
+        }
+
+        .navbar {
+            width: 1200px;
+            text-align: center;
+
+        }
+
+        .main {
+            position: relative;
+
+        }
+
+        .main img {
+            width: 1200px;
+            height: 600px;
+
+        }
+
+        .maincontent h3 {
+            position: absolute;
+            bottom: 300px;
+            right: 600px;
+            transform: translate(50%, 50%);
+            color: white;
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+            font-size: 45px;
+
+        }
+
+        .cardbox1 img {
+            height: 400px;
+            width: 550px;
+            bottom: 40px;
+            right: 50px;
+            padding: 2px;
+            margin-left: 30px;
+
+            position: relative;
+            display: flex;
+            transform: translate(10%, 10%);
+            text-align: center;
+            border-radius: 1px solid black;
+            background: none;
+        }
+
+        .cardbox2 img {
+            height: 400px;
+            width: 550px;
+            bottom: 40px;
+            right: 50px;
+            padding: 2px;
+            margin-right: 5px;
+            margin-left: 15px;
+            position: relative;
+            display: flex;
+            transform: translate(10%, 10%);
+            text-align: center;
+            border-radius: 1px solid black;
+            background: none;
+        }
+
+        .cards {
+            display: grid;
+            right: 100px;
+            margin-top: 30px;
+            grid-template-columns: auto auto;
+        }
+
+        .cardbox3 img {
+            height: 400px;
+            width: 550px;
+            bottom: 40px;
+            right: 50px;
+            position: relative;
+            display: flex;
+            margin-left: 30px;
+
+            transform: translate(10%, 10%);
+            text-align: center;
+            border-radius: 1px solid black;
+            background: none;
+            padding: 2px;
+        }
+
+        .cardbox4 img {
+            height: 400px;
+            width: 550px;
+            bottom: 40px;
+            right: 50px;
+            padding: 2px;
+            margin-left: 10px; 
+            margin-right: 5px;
+            position: relative;
+            display: flex;
+            transform: translate(10%, 10%);
+            text-align: center;
+            border-radius: 1px solid black;
+            background: none;
+        }
+
+        .small {
+            display: grid;
+            margin-top: 10px;
+            grid-template-columns: auto auto;
+        }
+
+        .travel img {
+            width: 1200px;
+            height: 600px;
+            margin-top: 30px;
+        }
+
+        .travel h2 {
+            padding: 10px 20px;
+            height: 20px;
+            position: relative;
+            right: 600px;
+            bottom: 500px;
+            transform: translate(50%, 50%);
+
+            color: rgb(88, 83, 85);
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+            font-size: 90px;
+
+        }
+
+        .travel p {
+
+            padding: 10px 20px;
+            height: 50px;
+            position: relative;
+            display: flex;
+            right: 550px;
+            bottom: 350px;
+            border-radius: 2px solid rgb(34, 33, 33);
+            transform: translate(50%, 50%);
+            color: rgb(69, 67, 67);
+            text-align: center;
+            justify-content: center;
+            padding: 2px;
+            font-size: 40px;
+        }
+
+        .card1 img {
+            width: 1200px;
+            height: 300;
+
+        }
+
+        h3 {
+            padding: 10px 20px;
+
+            position: relative;
+            display: flex;
+            right: 600px;
+            transform: translate(50%, 50%);
+            bottom: 650px;
+            color: azure;
+            text-align: center;
+            justify-content: center;
+            padding: 2px;
+            font-size: 80px;
+        }
+
+        .card1 p {
+            padding: 10px;
+            height: 50px;
+            position: relative;
+            display: flex;
+            right: 600px;
+            transform: translate(50%, 50%);
+            bottom: 500px;
+            color: rgb(240, 242, 242);
+            text-align: center;
+            justify-content: center;
+            padding: 2px;
+            font-size: 40px;
+        }
+
+        .card3 {
+            width: 1200px;
+
+
+        }
+
+        .card3 h2 {
+            padding: 20px 30px;
+            height: 400px;
+            position: relative;
+
+            background-color: rgb(207, 198, 186);
+            margin-top: -300px;
+            transform: translate(50%, 50%);
+            right: 600px;
+            top: 20px;
+            color: rgb(24, 26, 26);
+            text-align: center;
+            justify-content: center;
+            padding: 1px;
+            font-size: 60px;
+        }
+
+        .card3 p {
+            padding: 20px 30px;
+            height: 100px;
+            position: relative;
+            display: flex;
+            background-color: rgb(207, 198, 186);
+            bottom: 80px;
+            transform: translate(50%, 50%);
+            right: 600px;
+            padding-top: 100px;
+            color: rgb(24, 26, 26);
+            text-align: center;
+            justify-content: center;
+            padding: 2px;
+            font-size: 30px;
+        }
+        .card4{
+            top:30px;
+        }
+        .cardbox6 img {
+            width: 600px;
+            height: 505px;
+            position: relative;
+            display: flex;
+            transform: translate(10%, 10%);
+            right: 100px;
+            top: 80px;
+            border-radius: 2px solid black;
+            margin: 5px;
+            margin-left: 20px;
+            padding: 2px;
+        }
+
+        .cardbox7 img {
+            width: 300px;
+            height: 250px;
+            position: relative;
+            display: flex;
+            transform: translate(10%, 10%);
+            right: 70px;
+            top: 105px;
+            margin: 2px;
+
+            padding: 5px;
+            border-radius: 2px solid black;
+        }
+
+        .cardbox8 img {
+            width: 300px;
+            height: 250px;
+            position: relative;
+            display: flex;
+            transform: translate(10%, 10%);
+            right: 70px;
+            top: 105px;
+            margin: 5px;
+            padding: 2px;
+            border-radius: 2px solid black;
+        }
+
+        .cardbox9 img {
+            width: 295px;
+            height: 250px;
+            position: relative;
+            display: flex;
+            transform: translate(10%, 10%);
+            right: 685px;
+            top: 365px;
+            margin: 5px;
+            border-radius: 2px solid black;
+            padding: 2px;
+        }
+
+        .cardbox10 img {
+            width: 300px;
+            height: 250px;
+            position: relative;
+            display: flex;
+            transform: translate(10%, 10%);
+            left: 860px;
+            bottom: 150px;
+            margin: 5px;
+            padding: 2px;
+            border-radius: 2px solid black;
+        }
+
+        .card4 {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            position: relative;
+        }
+
+        .card5 img {
+            width: 1200px;
+            height: 600px;
+            margin-top: -50px;
+        }
+
+        .card5 h3 {
+            bottom: 600px;
+            color: rgb(41, 35, 35);
+            font-size: 55px;
+        }
+
+        .box {
+            text-align: center;
+            color: rgb(43, 40, 40);
+        }
+
+        .box h5 {
+            padding: 10px 20px;
+            height: 100px;
+            position: relative;
+            border-radius: 1px;
+            bottom: 600px;
+            right: 200px;
+            margin: 5px;
+            transform: translate(50%, 50%);
+            box-sizing: 50px;
+            color: rgb(34, 37, 39);
+            text-align: center;
+            justify-content: center;
+            border-color: azure;
+            padding: 50px;
+            font-size: 30px;
+        }
+
+        .box p {
+            padding: 10px 20px;
+            height: 100px;
+            position: relative;
+            display: flex;
+            bottom: 550px;
+            right: 200px;
+            box-sizing: 50px;
+            transform: translate(50%, 50%);
+            font-weight: bold;
+            color: rgb(28, 29, 33);
+            text-align: center;
+            justify-content: center;
+            padding: 2px;
+            font-size: 20px;
+        }
+
+        .button {
+
+            padding: 10px 20px;
+            border: 1px solid #2e1717;
+            color: rgb(38, 41, 43);
+            display: inline-block;
+            font-size: 15px;
+            text-align: center;
+            height: 30px;
+            transition: 0.3s ease;
+            border-radius: 5px;
+            position: relative;
+            bottom: 450px;
+            background-color: rgb(123, 201, 216);
+        }
+
+        .button:hover {
+            background: rgb(98, 93, 93);
+            color: black;
+        }
+
+        .travel1 {
+            position: relative;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .card6 {
+            width: 1200px;
+            height: 100px;
+            margin: 1px;
+            font-size: 25px;
+            line-height: 30px;
+            margin-top: -300px;
+            margin-bottom: -500px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <button class="menu-btn" onclick="openmenu()">☰</button>
+
+    </header>
+    <section class="main">
+        <div class="maincontent"><img src="image/imagep1.jpg">
+
+            <h3>Leave the ordinary,explore new places,and discover the extraordinary beauty that every journey offers.
+            </h3>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="cardbox1"><img src="image/imagep2.jpg"></div>
+        <div class="cardbox2"><img src="image/imagep3.jpg"></div>
+    </section>
+    <section class="small">
+        <div class="cardbox3"><img src="image/imagep4.jpg"></div>
+        <div class="cardbox4"><img src="image/imagep16 (2).jpg"></div>
+
+    </section>
+    <section class="travel">
+        <div class="cardcontent"><img src="image/train.jpg">
+
+            <h2>Travel</h2>
+            <p>Travel is a wonderful way to explore new places, experience <br>different cultures,enjoy nature and
+                create beautiful memories.<br>It helps us discover new adventures,meet new <br>people and learn more
+                about the world around us.</p>
+
+        </div>
+    </section>
+    <section class="card1">
+        <div class="cards2"><img src="image/imagep5.jpg">
+            <h3>About Travel With Us</h3>
+            <p>Travel with us helps you discover beautiful destinations, plan your <br>trips easily and enjoy memorable
+                experiences. Explore nature, adventures, <br>culture, food and exciting places with useful travel
+                information.</p>
+        </div>
+    </section>
+
+
+    <section class="card3">
+        <div class="cardcontent4">
+            <h2>Travel Freedom</h2>
+            <p>Travel Freedom means bring the freedom to explore new places,<br>choose your own journey and experience
+                the world without limits.<br> It follows us to enjoy nature, discover different cultures, meet<br> new
+                people and create unforgettable memories along the way. </p>
+        </div>
+    </section>
+    <section class="card4">
+        <div class="cardbox6"><img src="image/imagep6.jpg"></div>
+        <div class="cardbox7"><img src="image/imagep7.jpg"></div>
+        <div class="cardbox8"><img src="image/imagep8.jpg"></div>
+        <div class="cardbox9"><img src="image/imagep9.jpg"></div>
+        <div class="cardbox10"><img src="image/imagep10.jpg"></div>
+    </section>
+    <section class="card5">
+
+        <div class="cardcontent5"><img src="image/imagep11.jpg">
+            <h3>Things to do</h3>
+        </div>
+        <div class="travel1">
+            <div class="box">
+                <div class="cardbox10">
+                    <h5>Adventure</h5>
+                    <p>Experience exciting adventures by<br> exploring mountains, forests, beaches<br> and new
+                        destinations. </p>
+                    <a href="#" class="button">Learn more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="cardbox11">
+                    <h5>Family Fun</h5>
+                    <p>Enjoy family time with fun <br>activities, outdoor games, nature <br>walks, delicious
+                        food,<br>and memorable family photos.</p>
+                    <a href="#" class="button">Learn more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="cardbox12">
+                    <h5>Art & Culture</h5>
+                    <p>Discover the beauty of local <br>arts, traditions, music, dance and <br>culture heritage.</p>
+                    <a href="#" class="button">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="card6">
+        <div class="cardbox13">
+            <label>Name :</label>
+            <input type="text" placeholder="Name">
+            <label>Email Address :</label>
+            <input type="text" placeholder="email">
+            <label>Phone Number :</label>
+            <input type="text" placeholder="Enter Your Phone Number"><br>
+            <label>Message :</label>
+            <input type="text" placeholder="Enter Your Message">
+            <button type="submit">sign Up</button>
+
+        </div>
+    </section>
+</body>
+
+</html>
