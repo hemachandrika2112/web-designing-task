@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading{
+            font-size: 36px;
+            font-family: Monotype Corsiva;
+            text-align: center;
+        }
+        #product{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+           
+        }
+        .box img{
+            height: 190px;
+            width: 190px;
+            margin: 5px;
+            border-radius: 50%;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(203, 200, 201);
+            margin: 10px;
+             /* overflow: hidden; */
+             border-radius: 50%;
+        }
+         @media screen and (max-width:356px) {
+             #product{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        }
+        @media screen and (min-width:357px) and (max-width:567px) {
+            #product{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        }
+        @media screen and (min-width:568px) and (max-width:767px) {
+            #product{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        }
+        @media screen and (min-width:768px) and (max-width:1200px) {
+             #product{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        }
+        @media screen and (min-width:1201px) {
+            #product{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Welcome to Flora & Form</h1>
+    <div id="product">
+        <div class="box"><img src="image/image flower.jpg" alt=""></div>
+        <div class="box"><img src="image/image flower.jpg" alt=""></div>
+        <div class="box"><img src="image/image flower.jpg" alt=""></div>
+        <div class="box"><img src="image/image flower.jpg" alt=""></div>
+        <div class="box"><img src="image/image flower.jpg" alt=""></div>
+        <div class="box"><img src="image/image flower.jpg" alt=""></div>
+        <div class="box"><img src="image/image flower.jpg" alt=""></div>
+        <div class="box"><img src="image/image flower.jpg" alt=""></div>
+        <div class="box"><img src="image/image flower.jpg" alt=""></div>
+        <div class="box"><img src="image/image flower.jpg" alt=""></div>
+        <div class="box"><img src="image/image flower.jpg" alt=""></div>
+        <div class="box"><img src="image/image flower.jpg" alt=""></div>
+        
+    </div>
+</body>
+</html>
