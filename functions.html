@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(){
+            let a = 10;
+            let b = 20;
+            document.write(a+b);
+        }
+        f1();
+
+        function f2(a,b){
+            document.write(a+b);
+        }
+        f2(13,13);
+
+        function f3(){
+            let a = 90;
+            let b = 90;
+            return a+b;
+        }
+        document.write(f3());
+        var x = f3();
+        document.write(x);
+
+        function f4(a,b){
+            if (a<b){
+                return a;
+            }
+            else{
+                return b;
+            }
+        }
+        document.write(f4(10,52));
+    </script>
+</body>
+</html>
