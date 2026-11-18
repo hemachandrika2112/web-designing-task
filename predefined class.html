@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = new Date();
+        document.write(a + "<br>");
+
+        var b = Math.PI;
+        document.write(b + "<br>");
+
+        var course = {
+            "Python": "60 Hrs",
+            "Java": "70 Hrs",
+            "WD": "60 Hrs",
+            "Figma": "20 Hrs"
+        };
+        document.write(typeof (course) + "<br>");
+        document.write(course["Python"] + "<br>");
+        var x = JSON.stringify(course);
+        document.write(x + "<br>");
+
+
+        var c = new Map([
+            ["Python", "60 Hrs"],
+            ["Java", "70 Hrs"],
+            ["WD", "60 Hrs"],
+            ["Figma", "20 Hrs"]]
+        );
+        document.getElementById("j").innerHTML=c.get("Python");
+        c.set("Figma","70 Hrs");
+        document.getElementById("i").innerHTML=c.get("Figma");
+
+
+    </script>
+</body>
+</html>
