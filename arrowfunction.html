@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const m = () =>{
+            return "hi";
+        }
+        document.write(m());
+
+
+
+
+        //recursion
+        function f11(){
+            document.write("hi");
+            // f11(); 
+        }
+        f11();
+
+        //pass by value;
+
+         let a = 10;
+         let b = a;
+         document.write(a);
+         document.write(b);
+         b = b + 10;
+         document.write(a);
+         document.write(b);
+
+        function hi(){
+            let x = 10;
+            let y = 20;
+        }
+        function hello(obj){
+            obj.x = 90;
+            document.write(obj.x);
+            document.write(obj.y);
+        }
+
+        hello(hi);
+
+
+     
+    </script>
+</body>
+</html>
