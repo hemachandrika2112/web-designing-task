@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- onsubmit: Fires when the user clicks the Submit button or presses Enter -->
+  <form onsubmit="handleSubmit(event)">
+    
+    <!-- onfocus & onblur: Fire when clicking inside and outside the input box -->
+    <label for="username">Username: </label>
+    <input 
+      type="text" 
+      id="username" 
+      onfocus="handleFocus(this)" 
+      onblur="handleBlur(this)"
+      required>
+
+    <br><br>
+
+   <!-- onchange: Fires when the dropdown selection is changed -->
+    <label for="role">Role: </label>
+    <select id="role" onchange="handleChange(this.value)">
+      <option value="Student">Student</option>
+      <option value="Developer">Developer</option>
+      <option value="Designer">Designer</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Submit Form</button>
+  </form>
+
+  <p id="status"></p>
+
+  <script>
+    // I. onfocus: Highlights the input box when it becomes active
+    function handleFocus(element) {
+      element.style.backgroundColor = "blue";
+    }
+
+    // II. onsubmit: Validates or processes the form before submission
+    function handleSubmit(event) {
+      event.preventDefault(); // Prevents the page from refreshing
+      const user = document.getElementById("username").value;
+      alert("Form submitted for: " + user);
+    }
+
+    // III. onblur: Resets the background and checks input when leaving the box
+    function handleBlur(element) {
+      element.style.backgroundColor = "black";
+      document.getElementById("status").innerText = "Left username field.";
+    }
+
+    // IV. onchange: Updates text when a new dropdown option is picked
+    function handleChange(value) {
+      document.getElementById("status").innerText = "Role changed to: " + value;
+    }
+
+    
+  </script>
+</body>
+</html>
