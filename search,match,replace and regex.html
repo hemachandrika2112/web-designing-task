@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        function anup1() {
+            var z = "Hello Everyone";
+             var a = z.search(/l/i);
+             document.write(a);
+         }
+        anup1();
+
+         function anup2() {
+             var z = "Hello Everyone how are you all Hello Everyone how are you all";
+             var a = z.match(/are/g);
+             document.write(a);
+         }
+         anup2();
+
+         function anup3(){
+             var z = "Hello Everyone how are you all";
+             var a = z.match(/[e]/g);
+             document.write(a);
+
+
+             var y = "9384542020"
+             var n = y.match(/[6-9]/g);
+             document.write(n);
+         }
+         anup3();
+
+         function anup4() {
+             var z = "987654310"
+             var a = z.match(/[0-5]/g);
+             document.write(a);
+         }
+         anup4();
+
+         function data(){
+             var u = "hellohelloo";
+             var x = u.replace('o','-');
+             document.write(x);
+         }
+         data();
+        
+         </script>
+
+
+
+
+
+         <script>
+        const searchTerm = "apple";
+        // Matches the word "apple" globally and case-insensitively
+        const regex = new RegExp(`\\b${searchTerm}\\b`, "gi");
+
+        const text = "I like Apple pie and green apple juice.";
+        document.write(text.match(regex));
+
+        // Output: ["Apple", "apple"]
+
+
+        // Pattern: Minimum 8 characters, at least one letter and one number
+const passwordRegex = new RegExp("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$");
+
+document.write(passwordRegex.test("Pass1234")); // true
+document.write(passwordRegex.test("password")); // false (missing number)
+document.write(passwordRegex.test("Pass1"));    // false (too short)
+
+// • ^ and $. Anchor the pattern to the start and end of the string so the entire password is checked.
+// • (?=.*[A-Za-z]). A positive lookahead ensuring at least one uppercase or lowercase letter exists anywhere in the string.
+// • (?=.*\\d). A positive lookahead ensuring at least one digit (0-9) exists.
+// • [A-Za-z\\d]{8,}. Matches the allowed characters (letters and numbers) and enforces a minimum length of 8.
+
+    </script>
+</body>
+
+</html>
