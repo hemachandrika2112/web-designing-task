@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="keyInput">Type something here: </label>
+  <input 
+    type="text" 
+    id="keyInput" 
+    onkeydown="handleKeyDown(event)" 
+    onkeypress="handleKeyPress(event)" 
+    onkeyup="handleKeyUp(event)">
+
+  <p id="downLog">Key Down: </p>
+  <p id="pressLog">Key Press: </p>
+  <p id="upLog">Key Up: </p>
+
+  <script>
+    // 1. Fires first, the moment any key is pressed down
+    function handleKeyDown(event) {
+      document.getElementById("downLog").innerText = "Key Down: " + event.key;
+    }
+
+    // 2. Fires second, only for keys that produce a character (letters, numbers, symbols)
+    function handleKeyPress(event) {
+      document.getElementById("pressLog").innerText = "Key Press: " + event.key;
+    }
+
+    // 3. Fires last, when the key is released
+    function handleKeyUp(event) {
+      document.getElementById("upLog").innerText = "Key Up: " + event.key;
+    }
+  </script>
+</body>
+</html>
