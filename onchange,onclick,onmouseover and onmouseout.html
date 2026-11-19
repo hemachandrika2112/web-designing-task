@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1. onchange: Fires when the value changes and loses focus (or an option is selected)
+  <label for="city">Choose a city: </label>
+  <select id="city" onchange="handleChange(this.value)">
+    <option value="Salem">Salem</option>
+    <option value="Chennai">Chennai</option>
+    <option value="Madurai">Madurai</option>
+  </select>
+
+  <br><br>
+
+  2. onclick: Fires when the user clicks the button
+  <button onclick="handleClick()">Click Me</button>
+
+  <br><br>
+
+  3. onmouseover & 4. onmouseout: Fires when the mouse enters and leaves the box
+  <div 
+    onmouseover="handleMouseOver(this)" 
+    onmouseout="handleMouseOut(this)" 
+    style="width: 200px; padding: 20px; background-color: lightgray; text-align: center;">
+    Hover over me
+  </div>
+
+  <p id="output"></p>
+
+  <script>
+    function handleChange(selectedValue) {
+      document.getElementById("output").innerText = "You selected: " + selectedValue;
+    }
+
+    function handleClick() {
+      alert("Button was clicked!");
+    }
+
+    function handleMouseOver(element) {
+      element.style.backgroundColor = "lightblue";
+      element.innerText = "Mouse is over!";
+    }
+
+    function handleMouseOut(element) {
+      element.style.backgroundColor = "lightgray";
+      element.innerText = "Hover over me";
+    }
+    </script>
+</body>
+</html>
