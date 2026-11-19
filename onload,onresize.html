@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1. onload & 2. onresize attached to the body/window
+<body onload="handleLoad()" onresize="handleResize()">
+
+  <h2>Window Events Example</h2>
+  <p id="loadStatus">Loading...</p>
+  <p id="sizeStatus">Resize the browser window to see dimensions.</p>
+
+  <script>
+    // 1. onload: Fires once the entire page (HTML, CSS, images) has finished loading
+    function handleLoad() {
+      document.getElementById("loadStatus").innerText = "Page has completely loaded!";
+      updateDimensions(); // Display initial window size on load
+    }
+
+    // 2. onresize: Fires continuously whenever the browser window is resized
+    function handleResize() {
+      updateDimensions();
+    }
+
+    function updateDimensions() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      document.getElementById("sizeStatus").innerText = 
+        "Window Width: " + width + "px, Height: " + height + "px";
+    }
+  </script>
+
+</body>
+</html>
