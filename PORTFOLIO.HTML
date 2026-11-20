@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+       
+        overflow-x: hidden;
+        color: #f9fcff;
+        max-height: 100vh;
+    }
+
+    .Home {
+        background-color: #181a1b;
+
+        padding: 2px;
+        height: 70px;
+    }
+
+
+    .navbar {
+        position: relative;
+        justify-content: center;
+        display: flex;
+    }
+
+    .navbar ul {
+
+        color: rgb(198, 198, 170);
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 90px;
+        margin: 0;
+        padding: 20px;
+        
+    }
+
+    .navbar ul li a {
+        color: rgb(150, 147, 104);
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        
+    }
+
+    .navbar ul li a:hover {
+        color: rgb(199, 156, 111);
+    }
+
+    .Home1 {
+        margin: 0;
+        padding: 0;
+        background-color: #343539;
+
+        max-height: 100vh;
+    }
+
+    .Home1 img {
+        width: 400px;
+        height: 400px;
+        margin-top: 70px;
+        margin-left: 20px;
+        border-radius: 300px;
+    }
+
+    .Home1 h1 {
+        margin: 0;
+        padding: 5px;
+        display: flex;
+        position: relative;
+        left: 200px;
+        bottom: 350px;
+        font-size: 50px;
+        color: aqua;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .Home1 h3 {
+        margin: 0;
+        padding: 5px;
+        display: flex;
+        position: relative;
+        left: 200px;
+        bottom: 300px;
+        font-size: 20px;
+        color: rgb(180, 186, 186);
+        text-align: center;
+        justify-content: center;
+        line-height: 30px;
+    }
+
+    .Home1 button {
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        position: relative;
+        left: 700px;
+        bottom: 250px;
+        font-size: 15px;
+        color: rgb(239, 240, 240);
+        background-color: rgb(70, 68, 68);
+        text-align: center;
+        justify-content: center;
+        line-height: 10px;
+    }
+
+    .Home1 button:hover {
+        color: rgb(19, 18, 18);
+        background-color: aliceblue;
+    }
+
+    .about {
+        margin: 0;
+        padding: 0;
+        background-color: #2f3134;
+
+        max-height: 100vh;
+    }
+
+    .about img {
+        width: 400px;
+        height: 400px;
+        left: 780px;
+        display: flex;
+        position: relative;
+        top: 70px;
+
+        border-radius: 50px;
+    }
+
+    .about h1 {
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        position: relative;
+        right: 200px;
+        bottom: 400px;
+        margin-top: 80px;
+        font-size: 50px;
+        color: aqua;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about h3 {
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        position: relative;
+        right: 200px;
+        bottom: 380px;
+        font-size: 20px;
+        color: rgb(159, 160, 160);
+        text-align: center;
+        justify-content: center;
+        line-height: 1.5;
+    }
+
+    .projects{
+   text-align: center;
+   margin: 0;
+        padding: 0;
+        background-color: #1e2125;
+
+        height: 550px;
+  
+}
+.projects-title{
+  color:aqua;
+  font-size:50px;
+  padding-top: 60px;
+}
+.projects-container{
+  display:flex;
+  gap:50px;
+  justify-content:center;
+  padding-top: 60px;
+}
+.project-card{
+  background:whitesmoke;
+  width:300px;
+  border-radius:20px;
+  padding:10px;
+  color:rgb(12, 7, 88);
+ 
+  text-align:center;
+}
+
+.project-card h3{
+  font-size:20px;
+  margin:15px ;
+}
+.tech{
+  color:#a42f2f;
+  font-size:13px;
+  margin:5px ;
+  font-weight: bold;
+}
+.desc{
+  color:#1c0101;
+  font-size:18px;
+  line-height:1;
+}
+.project-card button{
+  background:#272a32;
+  color:white;
+  border:1px solid white;
+  padding:8px 16px;
+  margin-top:10px;
+  cursor:pointer;
+}
+.project-card button:hover{
+  background:#e5eaea;
+  color:rgb(61, 60, 60);
+}
+.skills-section {
+  text-align: center;
+  height: 100vh;
+  padding: 40px 20px;
+  
+  background-color: #2f3134;
+}
+
+.skills-section h2 {
+  font-size: 50px;
+  color:aqua;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.skills-section h3 {
+  font-size: 50px;
+  color: aqua;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-item {
+  text-align: center;
+}
+
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.skill-item p {
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+    
+    .contact {
+        margin: 0;
+        padding: 40px 20px;
+        background-color: #717172;
+        max-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+
+    .contact img {
+        width: 400px;
+        height: 400px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        border-radius: 50px;
+        justify-content: center;
+    }
+
+    .contact h1 {
+        margin: 0;
+        padding: 5px;
+        display: flex;
+        position: relative;
+        left: 300px;
+        bottom: 150px;
+        font-size: 45px;
+        color: aqua;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contact iframe {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        position: relative;
+        left: 170px;
+        top: 50px;
+       justify-content: center;
+    }
+
+    .contact h3 {
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        position: relative;
+        margin-top: 10px;
+        font-size: 30px;
+        top: 50px;
+        color: rgb(63, 75, 137);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+</head>
+<body>
+    <header class="Home">
+
+        <nav class="navbar">
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Home1" id="home"><img src="image/hema photo.jpeg" alt="">
+        <div class="name">
+            <h1>Hemachandrika K</h1>
+        </div>
+
+        <div>
+            <h3>I'm an aspiring Python Full Stack Developer driven by curiosity <br>and innovation.
+                I turn creative ideas into practical digital solutions.<br>
+                I enjoy crafting responsive and user-friendly web applications.<br>
+                Always exploring new technologies to build smarter digital experiences.</h3>
+        </div>
+        <a href="resume.pdf" download>
+            <button> Download My Resume</button>
+        </a>
+    </section>
+    <section class="about" id="about"><img src="image/about.jpg" alt="">
+        <h1>About</h1>
+        <h3>Hi! I'm a passionate and motivated individual who enjoys learning<br>
+            new things, exploring technology, and continuously improving my skills.<br>
+            I love solving problems, thinking creatively, and turning innovative ideas<br>
+            into reality. I'm always eager to embrace new experiences, take on challenges,<br>
+            and grow both personally and professionally. My goal is to expand my knowledge, <br>
+            develop my skills, and create meaningful solutions through <br>
+            creativity, dedication, and continuous learning.</h3>
+    </section>
+    <section class="projects" id="project">
+
+        <h2 class="projects-title">Projects</h2>
+
+        <div class="projects-container">
+
+            <!-- CARD 1 -->
+            <div class="project-card">
+
+                <h3>Wildlife and Nature Photography</h3>
+                <p class="tech">• HTML5 • CSS3</p>
+                <p class="desc">
+                    To capture the beauty of wildlife and nature through photography,
+                    create awareness about conservation and encourage people to
+                    appreciate and protect our natural environment.
+                </p>
+                <button>View Project 1</button>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="project-card">
+
+
+
+                <h3>Wander Vista - Travel and Nature Exploration Websites</h3>
+                <p class="tech">• HTML5 • CSS3</p>
+                <p class="desc">
+                    To create a user-friendly and responsive travel website that helps
+                    users explore beautiful destinations, travel, adventure, culture
+                    and useful travel information in one place.
+                </p>
+                <button>View Project 2</button>
+            </div>
+    </section>
+    <section class="skills-section" id="skills">
+  <h2>Technical Skills</h2>
+  <div class="images">
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+      <p>HTML</p>
+    </div>
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+      <p>CSS</p>
+    </div>
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+      <p>JavaScript</p>
+    </div>
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+      <p>C</p>
+    </div>
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+      <p>C++</p>
+    </div>
+    
+  </div>
+
+  <h3>Software & Tools</h3>
+  <div class="images">
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      <p>GitHub</p>
+    </div>
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+      <p>VS Code</p>
+    </div>
+    <div class="skill-item">
+      <img src="image/microsoft.png" alt="MS Office">
+      <p>MS Office</p>
+    </div>
+  </div>
+</section>
+    <footer class="contact" id="contact"><img src="image/contact.jpg" alt="">
+        <h1>Contact</h1>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.4504223272165!2d78.10850142365271!3d11.90204438742698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac0623f7c13e6b%3A0xb94b6e0c5aebf474!2sKadayampatti%2C%20Tamil%20Nadu%2C%20India!5e1!3m2!1sen!2sus!4v1792568876923!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <h3>hemachandrika2112@gmail.com</h3>
+            <h3>https://github.com/hemachandrika2112</h3>
+            <h3>9042182112</h3>
+        </div>
+    </footer>
+</body>
+
+</html>
