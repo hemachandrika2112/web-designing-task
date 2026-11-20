@@ -5,337 +5,346 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
-    body {
-        font-family: 'Times New Roman', Times, serif;
-       
-        overflow-x: hidden;
-        color: #f9fcff;
-        max-height: 100vh;
-    }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .Home {
-        background-color: #181a1b;
+        body {
+            font-family: 'Times New Roman', Times, serif;
 
-        padding: 2px;
-        height: 70px;
-    }
+            overflow-x: hidden;
+            color: #f9fcff;
+            max-height: 100vh;
+        }
+
+        .Home {
+            background-color: #181a1b;
+
+            padding: 2px;
+            height: 70px;
+        }
 
 
-    .navbar {
-        position: relative;
-        justify-content: center;
-        display: flex;
-    }
+        .navbar {
+            position: relative;
+            justify-content: center;
+            display: flex;
+        }
 
-    .navbar ul {
+        .navbar ul {
 
-        color: rgb(198, 198, 170);
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        gap: 90px;
-        margin: 0;
-        padding: 20px;
-        
-    }
+            color: rgb(198, 198, 170);
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            gap: 90px;
+            margin: 0;
+            padding: 20px;
 
-    .navbar ul li a {
-        color: rgb(150, 147, 104);
-        display: block;
-        font-size: 18px;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        
-    }
+        }
 
-    .navbar ul li a:hover {
-        color: rgb(199, 156, 111);
-    }
+        .navbar ul li a {
+            color: rgb(150, 147, 104);
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
 
-    .Home1 {
-        margin: 0;
-        padding: 0;
-        background-color: #343539;
+        }
 
-        max-height: 100vh;
-    }
+        .navbar ul li a:hover {
+            color: rgb(199, 156, 111);
+        }
 
-    .Home1 img {
-        width: 400px;
-        height: 400px;
-        margin-top: 70px;
-        margin-left: 20px;
-        border-radius: 300px;
-    }
+        .Home1 {
+            margin: 0;
+            padding: 0;
+            background-color: #343539;
 
-    .Home1 h1 {
-        margin: 0;
-        padding: 5px;
-        display: flex;
-        position: relative;
-        left: 200px;
-        bottom: 350px;
-        font-size: 50px;
-        color: aqua;
-        text-align: center;
-        justify-content: center;
-    }
+            max-height: 100vh;
+        }
 
-    .Home1 h3 {
-        margin: 0;
-        padding: 5px;
-        display: flex;
-        position: relative;
-        left: 200px;
-        bottom: 300px;
-        font-size: 20px;
-        color: rgb(180, 186, 186);
-        text-align: center;
-        justify-content: center;
-        line-height: 30px;
-    }
+        .Home1 img {
+            width: 400px;
+            height: 400px;
+            margin-top: 70px;
+            margin-left: 20px;
+            border-radius: 300px;
+        }
 
-    .Home1 button {
-        margin: 0;
-        padding: 10px;
-        display: flex;
-        position: relative;
-        left: 700px;
-        bottom: 250px;
-        font-size: 15px;
-        color: rgb(239, 240, 240);
-        background-color: rgb(70, 68, 68);
-        text-align: center;
-        justify-content: center;
-        line-height: 10px;
-    }
+        .Home1 h1 {
+            margin: 0;
+            padding: 5px;
+            display: flex;
+            position: relative;
+            left: 200px;
+            bottom: 350px;
+            font-size: 50px;
+            color: aqua;
+            text-align: center;
+            justify-content: center;
+        }
 
-    .Home1 button:hover {
-        color: rgb(19, 18, 18);
-        background-color: aliceblue;
-    }
+        .Home1 h3 {
+            margin: 0;
+            padding: 5px;
+            display: flex;
+            position: relative;
+            left: 200px;
+            bottom: 300px;
+            font-size: 20px;
+            color: rgb(180, 186, 186);
+            text-align: center;
+            justify-content: center;
+            line-height: 30px;
+        }
 
-    .about {
-        margin: 0;
-        padding: 0;
-        background-color: #2f3134;
+        .Home1 button {
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            position: relative;
+            left: 700px;
+            bottom: 250px;
+            font-size: 15px;
+            color: rgb(239, 240, 240);
+            background-color: rgb(70, 68, 68);
+            text-align: center;
+            justify-content: center;
+            line-height: 10px;
+        }
 
-        max-height: 100vh;
-    }
+        .Home1 button:hover {
+            color: rgb(19, 18, 18);
+            background-color: aliceblue;
+        }
 
-    .about img {
-        width: 400px;
-        height: 400px;
-        left: 780px;
-        display: flex;
-        position: relative;
-        top: 70px;
+        .about {
+            margin: 0;
+            padding: 0;
+            background-color: #2f3134;
 
-        border-radius: 50px;
-    }
+            max-height: 100vh;
+        }
 
-    .about h1 {
-        margin: 0;
-        padding: 10px;
-        display: flex;
-        position: relative;
-        right: 200px;
-        bottom: 400px;
-        margin-top: 80px;
-        font-size: 50px;
-        color: aqua;
-        text-align: center;
-        justify-content: center;
-    }
+        .about img {
+            width: 400px;
+            height: 400px;
+            left: 780px;
+            display: flex;
+            position: relative;
+            top: 70px;
 
-    .about h3 {
-        margin: 0;
-        padding: 10px;
-        display: flex;
-        position: relative;
-        right: 200px;
-        bottom: 380px;
-        font-size: 20px;
-        color: rgb(159, 160, 160);
-        text-align: center;
-        justify-content: center;
-        line-height: 1.5;
-    }
+            border-radius: 50px;
+        }
 
-    .projects{
-   text-align: center;
-   margin: 0;
-        padding: 0;
-        background-color: #1e2125;
+        .about h1 {
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            position: relative;
+            right: 200px;
+            bottom: 400px;
+            margin-top: 80px;
+            font-size: 50px;
+            color: aqua;
+            text-align: center;
+            justify-content: center;
+        }
 
-        height: 550px;
-  
-}
-.projects-title{
-  color:aqua;
-  font-size:50px;
-  padding-top: 60px;
-}
-.projects-container{
-  display:flex;
-  gap:50px;
-  justify-content:center;
-  padding-top: 60px;
-}
-.project-card{
-  background:whitesmoke;
-  width:300px;
-  border-radius:20px;
-  padding:10px;
-  color:rgb(12, 7, 88);
- 
-  text-align:center;
-}
+        .about h3 {
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            position: relative;
+            right: 200px;
+            bottom: 380px;
+            font-size: 20px;
+            color: rgb(159, 160, 160);
+            text-align: center;
+            justify-content: center;
+            line-height: 1.5;
+        }
 
-.project-card h3{
-  font-size:20px;
-  margin:15px ;
-}
-.tech{
-  color:#a42f2f;
-  font-size:13px;
-  margin:5px ;
-  font-weight: bold;
-}
-.desc{
-  color:#1c0101;
-  font-size:18px;
-  line-height:1;
-}
-.project-card button{
-  background:#272a32;
-  color:white;
-  border:1px solid white;
-  padding:8px 16px;
-  margin-top:10px;
-  cursor:pointer;
-}
-.project-card button:hover{
-  background:#e5eaea;
-  color:rgb(61, 60, 60);
-}
-.skills-section {
-  text-align: center;
-  height: 100vh;
-  padding: 40px 20px;
-  
-  background-color: #2f3134;
-}
+        .projects {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #1e2125;
 
-.skills-section h2 {
-  font-size: 50px;
-  color:aqua;
-  margin-top: 20px;
-  margin-bottom: 25px;
-}
+            height: 550px;
 
-.skills-section h3 {
-  font-size: 50px;
-  color: aqua;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
+        }
 
-.images {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
+        .projects-title {
+            color: aqua;
+            font-size: 50px;
+            padding-top: 60px;
+        }
 
-.skill-item {
-  text-align: center;
-}
+        .projects-container {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            padding-top: 60px;
+        }
 
-.skill-item img {
-  width: 60px;
-  height: 60px;
-  background: white;
-  border-radius: 15px;
-  padding: 10px;
-}
+        .project-card {
+            background: whitesmoke;
+            width: 300px;
+            border-radius: 20px;
+            padding: 10px;
+            color: rgb(12, 7, 88);
 
-.skill-item p {
-  color: white;
-  font-size: 17px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-    
-    .contact {
-        margin: 0;
-        padding: 40px 20px;
-        background-color: #717172;
-        max-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 0;
-        margin-bottom: 0;
-        
-    }
+            text-align: center;
+        }
 
-    .contact img {
-        width: 400px;
-        height: 400px;
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-bottom: 20px;
-        border-radius: 50px;
-        justify-content: center;
-    }
+        .project-card h3 {
+            font-size: 20px;
+            margin: 15px;
+        }
 
-    .contact h1 {
-        margin: 0;
-        padding: 5px;
-        display: flex;
-        position: relative;
-        left: 300px;
-        bottom: 150px;
-        font-size: 45px;
-        color: aqua;
-        text-align: center;
-        justify-content: center;
-    }
+        .tech {
+            color: #a42f2f;
+            font-size: 13px;
+            margin: 5px;
+            font-weight: bold;
+        }
 
-    .contact iframe {
-        width: 100px;
-        height: 100px;
-        display: flex;
-        position: relative;
-        left: 170px;
-        top: 50px;
-       justify-content: center;
-    }
+        .desc {
+            color: #1c0101;
+            font-size: 18px;
+            line-height: 1;
+        }
 
-    .contact h3 {
-        margin: 0;
-        padding: 10px;
-        display: flex;
-        position: relative;
-        margin-top: 10px;
-        font-size: 30px;
-        top: 50px;
-        color: rgb(63, 75, 137);
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-</style>
+        .project-card button {
+            background: #272a32;
+            color: white;
+            border: 1px solid white;
+            padding: 8px 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .project-card button:hover {
+            background: #e5eaea;
+            color: rgb(61, 60, 60);
+        }
+
+        .skills-section {
+            text-align: center;
+            height: 100vh;
+            padding: 40px 20px;
+
+            background-color: #2f3134;
+        }
+
+        .skills-section h2 {
+            font-size: 50px;
+            color: aqua;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .skills-section h3 {
+            font-size: 50px;
+            color: aqua;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill-item {
+            text-align: center;
+        }
+
+        .skill-item img {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .skill-item p {
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .contact {
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #717172;
+            max-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0;
+            margin-bottom: 0;
+
+        }
+
+        .contact img {
+            width: 400px;
+            height: 400px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            border-radius: 50px;
+            justify-content: center;
+        }
+
+        .contact h1 {
+            margin: 0;
+            padding: 5px;
+            display: flex;
+            position: relative;
+            left: 300px;
+            bottom: 150px;
+            font-size: 45px;
+            color: aqua;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .contact iframe {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            position: relative;
+            left: 170px;
+            top: 50px;
+            justify-content: center;
+        }
+
+        .contact h3 {
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            position: relative;
+            margin-top: 10px;
+            font-size: 30px;
+            top: 50px;
+            color: rgb(63, 75, 137);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
+
 <body>
     <header class="Home">
 
@@ -410,47 +419,49 @@
             </div>
     </section>
     <section class="skills-section" id="skills">
-  <h2>Technical Skills</h2>
-  <div class="images">
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-      <p>HTML</p>
-    </div>
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-      <p>CSS</p>
-    </div>
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-      <p>JavaScript</p>
-    </div>
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
-      <p>C</p>
-    </div>
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
-      <p>C++</p>
-    </div>
-    
-  </div>
+        <h2>Technical Skills</h2>
+        <div class="images">
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                <p>C</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                    alt="C++">
+                <p>C++</p>
+            </div>
 
-  <h3>Software & Tools</h3>
-  <div class="images">
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-      <p>GitHub</p>
-    </div>
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
-      <p>VS Code</p>
-    </div>
-    <div class="skill-item">
-      <img src="image/microsoft.png" alt="MS Office">
-      <p>MS Office</p>
-    </div>
-  </div>
-</section>
+        </div>
+
+        <h3>Software & Tools</h3>
+        <div class="images">
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                <p>GitHub</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                <p>VS Code</p>
+            </div>
+            <div class="skill-item">
+                <img src="image/microsoft.png" alt="MS Office">
+                <p>MS Office</p>
+            </div>
+        </div>
+    </section>
     <footer class="contact" id="contact"><img src="image/contact.jpg" alt="">
         <h1>Contact</h1>
         <div>
